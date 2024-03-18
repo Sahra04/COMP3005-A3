@@ -3,6 +3,7 @@ import psycopg2
 
 #1.) retrieves and displayes all records from the students table
 def getAllStudents():
+    print('\n')
     #SQL query to select all records
     statement.execute('SELECT * FROM students')
     #fetches all results from the query and then prints it
@@ -53,13 +54,13 @@ try:
     getAllStudents() 
 
     #2.) 
-    addStudent('firstName', 'lastName', 'email@gmail.com', '2024-03-18')
+    addStudent(input('what is the student first name: '), input('what is the student last name: '), input('what is the student email: '), input('date student enrolled: '))
 
     #3.)
-    updateStudentEmail(1, 'updateEmail@gmail.com')
+    updateStudentEmail(int(input('student id for email update: ')), input('update student email to: '))
 
     #4.)
-    deleteStudent(2)
+    deleteStudent(int(input('student id you want to delete: ')))
     
     #commit the changes to  database
     connection.commit()
