@@ -48,7 +48,7 @@ try:
     #create cursor object to interact with database
     statement = connection.cursor()
   
-    #application functions being executed
+    #application functions being executed using user input
 
     #1.) 
     getAllStudents() 
