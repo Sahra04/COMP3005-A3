@@ -1,6 +1,22 @@
 # COMP3005-A3
 Q1 of assignment-3
 
+Compile and run application steps: (make sure you have python downloaded)
+
+1.) download databaseInitializer.sql SQL file and main.py python file.
+
+important:
+- Make sure database is created and initialized before you compile and run python application
+- make sure to change host, port, database, user, and password varibles in the python application to connect to your corresponding database
+
+2.) open command prompt or terminal
+
+3.) change to the directory where the python application resides
+
+4.) then type the following to run the application: "python main.py" or "py main.py"
+
+________________________________________________________________________________________________________________
+
 How to initialize database:
 
 1.) open pgadmin4
@@ -13,13 +29,5 @@ How to initialize database:
 
 5.) the database should now be initialized
 
-________________________________________________________________________________________________________________
 
-Compile and run application steps: (make sure you have python downloaded)
-
-1.) open command prompt or terminal
-
-2.) change to the directory where the python application resides
-
-3.) then type the following to run the application: "python main.py" or "py main.py"
 
