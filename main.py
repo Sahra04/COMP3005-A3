@@ -44,24 +44,29 @@ def deleteStudent(student_id):
 #establishing the connection and interaction between the python application and the database
 try:
     #establish connection with database
-    connection = psycopg2.connect(host= "localhost", port="5432", database= "Assignment3", user= "postgres", password= "password" )
+    connection = psycopg2.connect(host= "localhost", port="5432", database= "Assignment3", user= "postgres", password= "sahra3005!" )
     #create cursor object to interact with database
     statement = connection.cursor()
   
-    #application functions being executed using user input
+    #application functions being executed
 
     #1.) 
     getAllStudents() 
 
     #2.) 
+    print("fill in the following inputs to add student")
+    print('\n')
     addStudent(input('what is the student first name: '), input('what is the student last name: '), input('what is the student email: '), input('date student enrolled: '))
+    #commit the changes to  database
+    connection.commit()
 
     #3.)
     updateStudentEmail(int(input('student id for email update: ')), input('update student email to: '))
+    #commit the changes to  database
+    connection.commit()
 
     #4.)
     deleteStudent(int(input('student id you want to delete: ')))
-    
     #commit the changes to  database
     connection.commit()
 
