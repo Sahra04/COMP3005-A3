@@ -1,6 +1,8 @@
 # COMP3005-A3
 Q1 of assignment-3
 
+***VIDEO DEMONSTRATION YOUTUBE LINK: https://youtu.be/-uFkfYQ-zKQ
+
 SECTION 1: 
 
 Compile and run application steps: (make sure you have python downloaded)
